@@ -2,46 +2,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baby Boo | Handmade Babywear</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baby Boo</title>
 
-  <meta
-    name="description"
-    content="Baby Boo creates soft handmade baby dresses, kettuduppu sets, newborn essentials, and gift-ready babywear crafted with love."
-  />
-
-  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
-  />
-
-  <link rel="stylesheet" href="styles.css" />
+  >
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="topbar">
+  <!-- NAVBAR -->
+  <header class="navbar">
 
-    <a href="#home" class="brand">
-      <img src="assets/logo.png" alt="Baby Boo Logo" class="logo" />
+    <div class="logo-container">
+
+      <img
+        src="assets/gallery-1.jpeg"
+        alt="Baby Boo Logo"
+        class="logo"
+      >
 
       <div class="brand-text">
         <h1>Baby Boo</h1>
-        <p>Handmade Babywear</p>
+        <p>Baby-Friendly Dresses</p>
       </div>
-    </a>
 
-    <nav class="nav">
+    </div>
+
+
+    <nav>
+      <a href="#home">Home</a>
       <a href="#collection">Collection</a>
       <a href="#gallery">Gallery</a>
-      <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -53,96 +53,58 @@
 
     <div class="hero-content">
 
-      <p class="eyebrow">Soft • Elegant • Handmade</p>
-
       <h2>
-        Beautiful babywear made with comfort and love.
+        Handmade Baby Dresses Made With Love
       </h2>
 
-      <p class="hero-text">
-        Discover adorable kettuduppu sets, baby frocks, towels,
-        crochet accessories, and gift-ready essentials designed
-        for newborn comfort and precious moments.
+      <p>
+        Elegant handmade babywear crafted for comfort,
+        softness, and adorable moments.
       </p>
 
-      <div class="hero-buttons">
-        <a href="#gallery" class="primary-btn">View Collection</a>
-
-        <a
-          href="https://wa.me/919074110805"
-          target="_blank"
-          class="secondary-btn"
-        >
-          Order on WhatsApp
-        </a>
-      </div>
+      <a href="#gallery" class="btn">
+        Explore Collection
+      </a>
 
     </div>
 
 
-    <div class="hero-image">
+    <div class="hero-image-container">
+
       <img
-        src="assets/collection-1.jpeg"
-        alt="Baby Boo Handmade Babywear"
-      />
+        src="assets/gallery-2.jpeg"
+        alt="Baby Dress"
+        class="hero-image"
+      >
+
     </div>
 
   </section>
 
 
-  <!-- FEATURES -->
-  <section class="features" id="collection">
+  <!-- COLLECTION SECTION -->
+  <section class="collection" id="collection">
 
-    <div class="feature-card">
-      <h3>Gentle Fabrics</h3>
-      <p>
-        Soft breathable materials that feel light and safe on delicate skin.
-      </p>
-    </div>
-
-    <div class="feature-card">
-      <h3>Handmade Finish</h3>
-      <p>
-        Carefully stitched details with embroidery, lace, and premium finishing.
-      </p>
-    </div>
-
-    <div class="feature-card">
-      <h3>Perfect Gifts</h3>
-      <p>
-        Ideal for newborn gifting, naming ceremonies, baby shoots, and visits.
-      </p>
-    </div>
-
-  </section>
+    <h2 class="section-title">
+      Our Collection
+    </h2>
 
 
-  <!-- STORY SECTION -->
-  <section class="story-section">
+    <div class="collection-grid">
 
-    <div class="story-image">
-      <img src="assets/collection-2.jpeg" alt="Babywear Set" />
-    </div>
+      <div class="card">
+        <img src="assets/gallery-3.jpeg" alt="Baby Dress">
+        <h3>Kettuduppu</h3>
+      </div>
 
-    <div class="story-content">
+      <div class="card">
+        <img src="assets/gallery-4.jpeg" alt="Baby Outfit">
+        <h3>Baby Frocks</h3>
+      </div>
 
-      <p class="eyebrow">Why Parents Love Baby Boo</p>
-
-      <h2>
-        Delicate, practical, and beautifully handmade babywear.
-      </h2>
-
-      <p>
-        Every Baby Boo piece is designed to balance comfort,
-        softness, and boutique craftsmanship. We create babywear
-        that looks adorable while keeping little ones cozy.
-      </p>
-
-      <div class="tags">
-        <span>Skin-friendly</span>
-        <span>Gift-ready</span>
-        <span>Elegant designs</span>
-        <span>Custom orders</span>
+      <div class="card">
+        <img src="assets/gallery-5.jpeg" alt="Baby Set">
+        <h3>Gift Sets</h3>
       </div>
 
     </div>
@@ -150,117 +112,651 @@
   </section>
 
 
-  <!-- GALLERY -->
-  <section class="gallery-section" id="gallery">
+  <!-- GALLERY SECTION -->
+  <section class="gallery" id="gallery">
 
-    <div class="section-title">
-      <p class="eyebrow">Gallery</p>
-      <h2>Favorite Baby Boo Styles</h2>
-    </div>
+    <h2 class="section-title">
+      Gallery
+    </h2>
 
 
     <div class="gallery-grid">
 
-      <img src="assets/gallery-1.jpeg" alt="Baby dress" />
+      <img src="assets/gallery-6.jpeg" alt="Baby Dress">
 
-      <img src="assets/gallery-2.jpeg" alt="Baby outfit" />
+      <img src="assets/gallery-7.jpeg" alt="Cute Dress">
 
-      <img src="assets/gallery-3.jpeg" alt="Newborn dress" />
+      <img src="assets/gallery-8.jpeg" alt="Babywear">
 
-      <img src="assets/gallery-4.jpeg" alt="Baby gift set" />
+      <img src="assets/gallery-9.jpeg" alt="Handmade Dress">
 
-      <img src="assets/gallery-5.jpeg" alt="Baby collection" />
+      <img src="assets/gallery-10.jpeg" alt="Baby Collection">
 
-      <img src="assets/gallery-6.jpeg" alt="Cute babywear" />
-
-    </div>
-
-  </section>
-
-
-  <!-- PRICING -->
-  <section class="pricing-section" id="pricing">
-
-    <div class="section-title">
-      <p class="eyebrow">Pricing</p>
-      <h2>Baby Boo Price List</h2>
-    </div>
-
-
-    <div class="pricing-grid">
-
-      <div class="price-card">
-        <h3>Kettuduppu</h3>
-        <p>Starts from ₹100</p>
-      </div>
-
-      <div class="price-card">
-        <h3>Frocks</h3>
-        <p>Starts from ₹250</p>
-      </div>
-
-      <div class="price-card">
-        <h3>Wrap Towels</h3>
-        <p>Starts from ₹350</p>
-      </div>
-
-      <div class="price-card">
-        <h3>Crochet Shoes</h3>
-        <p>₹350</p>
-      </div>
+      <img src="assets/gallery-11.jpeg" alt="Baby Outfit">
 
     </div>
 
   </section>
 
 
-  <!-- CONTACT -->
-  <section class="contact-section" id="contact">
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
 
-    <div class="contact-box">
+    <h2>Contact Baby Boo</h2>
 
-      <p class="eyebrow">Contact Baby Boo</p>
-
-      <h2>
-        Ready to order or customize a baby dress?
-      </h2>
-
-      <p>
-        Reach us through WhatsApp, Instagram, or email.
-      </p>
+    <p>
+      Order through WhatsApp or Instagram
+    </p>
 
 
-      <div class="contact-buttons">
-
-        <a
-          href="https://wa.me/919074110805"
-          target="_blank"
-          class="primary-btn"
-        >
-          WhatsApp Us
-        </a>
-
-
-        <a
-          href="mailto:babyboo301996@gmail.com"
-          class="secondary-btn"
-        >
-          Send Email
-        </a>
-
-      </div>
-
-    </div>
+    <a
+      href="https://wa.me/919074110805"
+      target="_blank"
+      class="btn"
+    >
+      WhatsApp Us
+    </a>
 
   </section>
 
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer>
     <p>
-      © 2026 Baby Boo Handmade Babywear. All rights reserved.
+      © 2026 Baby Boo. All Rights Reserved.
     </p>
   </footer>
 
 </body>
 </html>
+```
+
+---
+
+# Add This To Your `styles.css`
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fffaf8;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.brand-text h1 {
+  font-size: 24px;
+}
+
+.brand-text p {
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 8%;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.hero-image-container {
+  flex: 1;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff8fa3;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.collection,
+.gallery,
+.contact {
+  padding: 80px 8%;
+}
+
+.collection-grid,
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card img,
+.gallery-grid img {
+  width: 100%;
+  display: block;
+}
+
+.card h3 {
+  margin-top: 16px;
+}
+
+.gallery-grid img {
+  border-radius: 20px;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: white;
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-content h2 {
+    font-size: 36px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+```
+
+---
+
+# AUTOMATIC IMAGE GALLERY (BEST FOR MANY IMAGES)
+
+Since you have lots of babywear photos, this setup automatically loads all your images without adding them one-by-one manually.
+
+---
+
+# STEP 1 — ORGANIZE YOUR IMAGES
+
+Put all gallery photos inside:
+
+```text
+assets/gallery/
+```
+
+Example:
+
+```text
+assets/gallery/gallery-1.jpeg
+assets/gallery/gallery-2.jpeg
+assets/gallery/gallery-3.jpeg
+```
+
+Continue like this:
+
+```text
+gallery-4.jpeg
+gallery-5.jpeg
+gallery-6.jpeg
+```
+
+---
+
+# STEP 2 — REPLACE YOUR GALLERY HTML
+
+Replace your old gallery section with this:
+
+```html
+<!-- GALLERY SECTION -->
+<section class="gallery" id="gallery">
+
+  <h2 class="section-title">
+    Gallery
+  </h2>
+
+  <div class="gallery-grid" id="gallery-grid">
+  </div>
+
+</section>
+```
+
+---
+
+# STEP 3 — CREATE `script.js`
+
+Create a file called:
+
+```text
+script.js
+```
+
+Paste this FULL code:
+
+```javascript
+const galleryGrid = document.getElementById("gallery-grid");
+
+const totalImages = 114;
+
+for (let i = 1; i <= totalImages; i++) {
+
+  const img = document.createElement("img");
+
+  img.src = `assets/gallery/gallery-${i}.jpeg`;
+
+  img.alt = `Baby Boo Dress ${i}`;
+
+  img.loading = "lazy";
+
+  galleryGrid.appendChild(img);
+}
+```
+
+---
+
+# STEP 4 — CONNECT JAVASCRIPT
+
+Before the closing:
+
+```html
+</body>
+```
+
+add this:
+
+```html
+<script src="script.js"></script>
+```
+
+Example:
+
+```html
+<footer>
+  <p>© 2026 Baby Boo</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+```
+
+---
+
+# FULL `styles.css` CODE
+
+Create a file called:
+
+```text
+styles.css
+```
+
+Then paste this FULL code:
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fffaf8;
+  color: #333;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+/* NAVBAR */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.brand-text h1 {
+  font-size: 26px;
+  color: #ff8fa3;
+}
+
+.brand-text p {
+  font-size: 14px;
+  color: #777;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff8fa3;
+}
+
+/* HERO SECTION */
+
+.hero {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 8%;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h2 {
+  font-size: 54px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.hero-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+  color: #666;
+}
+
+.hero-image-container {
+  flex: 1;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* BUTTON */
+
+.btn {
+  display: inline-block;
+  background: #ff8fa3;
+  color: white;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* SECTION STYLING */
+
+.collection,
+.gallery,
+.contact {
+  padding: 90px 8%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+  color: #222;
+}
+
+/* COLLECTION CARDS */
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* GALLERY */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 24px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* CONTACT */
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 18px;
+  margin-bottom: 35px;
+  color: #666;
+}
+
+/* FOOTER */
+
+footer {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 992px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero-content h2 {
+    font-size: 34px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .collection,
+  .gallery,
+  .contact {
+    padding: 70px 20px;
+  }
+
+  .gallery-grid img,
+  .card img {
+    height: 260px;
+  }
+}
