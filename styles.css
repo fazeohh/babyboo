@@ -353,4 +353,139 @@ footer {
     justify-content: center;
   }
 }
+```
 
+---
+
+# AUTOMATIC IMAGE GALLERY (BEST FOR MANY IMAGES)
+
+Since you have lots of babywear photos, this setup automatically loads all your images without adding them one-by-one manually.
+
+---
+
+# STEP 1 — ORGANIZE YOUR IMAGES
+
+Put all gallery photos inside:
+
+```text
+assets/gallery/
+```
+
+Example:
+
+```text
+assets/gallery/gallery-1.jpeg
+assets/gallery/gallery-2.jpeg
+assets/gallery/gallery-3.jpeg
+```
+
+Continue like this:
+
+```text
+gallery-4.jpeg
+gallery-5.jpeg
+gallery-6.jpeg
+```
+
+---
+
+# STEP 2 — REPLACE YOUR GALLERY HTML
+
+Replace your old gallery section with this:
+
+```html
+<!-- GALLERY SECTION -->
+<section class="gallery" id="gallery">
+
+  <h2 class="section-title">
+    Gallery
+  </h2>
+
+  <div class="gallery-grid" id="gallery-grid">
+  </div>
+
+</section>
+```
+
+---
+
+# STEP 3 — CREATE `script.js`
+
+Create a file called:
+
+```text
+script.js
+```
+
+Paste this FULL code:
+
+```javascript
+const galleryGrid = document.getElementById("gallery-grid");
+
+const totalImages = 114;
+
+for (let i = 1; i <= totalImages; i++) {
+
+  const img = document.createElement("img");
+
+  img.src = `assets/gallery/gallery-${i}.jpeg`;
+
+  img.alt = `Baby Boo Dress ${i}`;
+
+  img.loading = "lazy";
+
+  galleryGrid.appendChild(img);
+}
+```
+
+---
+
+# STEP 4 — CONNECT JAVASCRIPT
+
+Before the closing:
+
+```html
+</body>
+```
+
+add this:
+
+```html
+<script src="script.js"></script>
+```
+
+Example:
+
+```html
+<footer>
+  <p>© 2026 Baby Boo</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+```
+
+---
+
+# STEP 5 — ADD THIS CSS
+
+Add this into `styles.css`
+
+```css
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
