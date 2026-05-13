@@ -124,10 +124,6 @@ nav a:hover {
   transform: translateY(-4px);
 }
 
-.hero-image-container {
-  position: relative;
-}
-
 .hero-image {
   width: 100%;
   border-radius: 42px;
@@ -211,7 +207,6 @@ nav a:hover {
   font-size: 82px;
   line-height: 1;
   margin-bottom: 24px;
-  color: #4c3845;
 }
 
 .contact p {
@@ -227,22 +222,11 @@ footer {
   font-size: 14px;
 }
 
-@media (max-width: 1200px) {
-
-  .hero-content h2 {
-    font-size: 82px;
-  }
-}
-
 @media (max-width: 992px) {
 
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
-  }
-
-  .hero-content p {
-    margin-inline: auto;
   }
 
   .hero-content h2 {
@@ -275,7 +259,6 @@ footer {
 
   .hero-content h2 {
     font-size: 54px;
-    line-height: 0.95;
   }
 
   .section-title {
@@ -284,9 +267,5 @@ footer {
 
   .contact h2 {
     font-size: 56px;
-  }
-
-  .card img {
-    height: 300px;
   }
 }
