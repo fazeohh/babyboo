@@ -12,7 +12,6 @@ for (let i = 1; i <= totalImages; i++) {
 
   img.loading = "lazy";
 
-  // fallback if image missing
   img.onerror = function () {
     this.style.display = "none";
   };
